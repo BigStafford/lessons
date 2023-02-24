@@ -1,0 +1,46 @@
+@import url("reset.css");
+
+.footer__title {
+	color: chocolate;
+}
+
+.footer__title li {
+	color: aquamarine;
+}
+
+h1 {
+	color: red;
+}
+
+h2 {
+	color: green;
+}
+
+.game__process {
+	color: blue;
+}
+
+.story,
+.system__requirements {
+color: brown;
+}
+
+.development {
+color: coral;
+}
+
+#h-6{
+	color: midnightblue;
+}
+
+.downloadable__add-ons {
+	color: darkgoldenrod;
+}
+
+.see__also {
+	color: cyan;
+}
+
+.ratings__reviews {
+	color: rebeccapurple;
+}
