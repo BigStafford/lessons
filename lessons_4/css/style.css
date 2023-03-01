@@ -1,0 +1,94 @@
+@import url("reset.css");
+
+@import url(https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap);
+
+@font-face {
+	font-family: "Circular Std";
+	src: url("/fonts/CircularStd-Bold.woff2") format("woff2"), url("../fonts/CircularStd-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Circular Std";
+	src: url("../fonts/CircularStd-Book.woff2") format("woff2"), url("../fonts/CircularStd-Book.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+h1 {
+font-family: "Phudu", sans-serif;
+font-size: 25px;
+font-style: normal;
+font-weight: 600;
+color: #87adce;
+text-align: center;
+text-decoration: underline;
+text-shadow: 2px 2px 2px #000;
+text-transform: uppercase;
+line-height: 1.8;
+letter-spacing: 10px;
+}
+
+h2 {
+	font-family: "Phudu", serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	color: #87adce;
+	text-align: justify;
+	text-decoration: underline;
+	text-transform: uppercase;
+	line-height: 1.9;
+	text-indent: 10px;
+	letter-spacing: 5px
+}
+
+h3 {
+	font-family: "Phudu", serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	color: #6e8ca7;
+	text-align: justify;
+	text-transform: uppercase;
+	line-height: 1.5;
+	text-indent: 15px;
+	letter-spacing: 5px;
+}
+
+[class*="__conteiner"] {
+	font-family: "Signika Negative", sans-serif;
+	font-size: 19px;
+	font-style: normal;
+	font-weight: 300;
+	color: #6c757d;
+	text-align: center;
+	line-height: 1.5;
+	letter-spacing: 2px;
+	word-spacing: 10px;
+}
+
+.description {
+	font-family: "Circular Std", sans-serif;
+	font-size: 19px;
+	font-weight: 700;
+	color: #6c757d;
+	line-height: 1.5;
+	word-spacing: 2px;
+	text-indent: 10px
+}
+
+.health {
+	font-family: "Circular Std", sans-serif;
+	font-size: 19px;
+	font-weight: 500;
+	color: #6c757d;
+	line-height: 1.5;
+	word-spacing: 2px;
+	text-indent: 10px
+}
