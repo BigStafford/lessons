@@ -1,0 +1,114 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+body {
+font-family: "Poppins", sans-serif;
+font-weight: 300;
+font-size: 14px;
+color: #6C757D;
+}
+
+[class*="__container"] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.img__header {
+margin-bottom: 100px;
+}
+
+.title {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #212529;
+	max-width: 605px;
+}
+
+.article__container {
+	padding-top: 20px;
+	padding-bottom: 60px;
+}
+
+.article__text-block p {
+		line-height: 1.78;
+		margin-bottom: 30px;
+}
+
+
+.img__main {
+	max-width: 100%;
+	margin-bottom: 80px;
+	font-size: 0;
+	border-radius: 5px
+}
+
+.img-1 {
+	margin-right: 30px;
+}
+
+
+
+
+
+.pratice {
+	color: black;
+	padding: 15px;
+}
+
+.block {
+	background-color: red;
+}
+
+.inline {
+	background-color: green;
+}
+
+.block__border-1 {
+	border: 2px solid black;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: red;
+}
+
+.block__border-2 {
+	border: 4px dotted hotpink;
+	margin-bottom: 15px;
+}
+
+.block__border-3 {
+	border: 5px dashed greenyellow;
+	margin-bottom: 15px;
+}
+
+.block__border-4 {
+	border: 5px double;
+	margin-bottom: 15px;
+}
+
+.inline-block {
+	border: 5px solid;
+	margin: 15px 15px;
+}
+
+.block__border-5 {
+	border-right: 2px solid black;
+	margin-bottom: 15px;
+	color: red;
+}
+.block__border-6 {
+	border-top: 4px dotted greenyellow;
+	margin-bottom: 15px;
+}
+.block__border-7 {
+	border-left: 5px double;
+	margin-bottom: 15px;
+}
+.block__border-8 {
+	border-bottom: 4px dashed hotpink;
+	margin-bottom: 15px;
+}
