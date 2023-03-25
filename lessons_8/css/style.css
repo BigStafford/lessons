@@ -1,0 +1,220 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+.wrraper {
+	background: url("../img/unsplash_WgMDQsn36w4.jpg") center / cover no-repeat;
+}
+
+[class*="wrraper__container"] {
+	max-width: 1277px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+
+.wrraper__block {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 1.66;
+	color: #E5E5E5;
+}
+
+.wrraper__name {
+	max-width: 65px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.38;
+	color: #F8F9FA;
+	text-transform: uppercase;
+	padding-top: 36px;
+}
+
+.wrraper__name::after {
+	content: ".";
+	font-family: 'Times New Roman', Times, serif;
+	color: #DDBEA9;
+}
+
+.wrraper__date {
+max-width: 68px;
+padding-top: 269px;
+margin-bottom: 15px;
+}
+.wrraper__text {
+	max-width: 605px;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.6;
+	color: #F8F9FA;
+	margin-bottom: 15px;
+}
+
+.wrraper__text-2 {
+	padding-bottom: 100px;
+}
+
+.unorder-list {
+	padding-top: 100px;
+}
+
+.unorder-list__conteiner {
+	max-width: 1106px; 
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.unor-list {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 0.93;
+	margin-bottom: 68px;
+	color: #637381;
+}
+
+.unorder-list__title {
+	margin-bottom: 45px;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+	font-size: 26px;
+	line-height: 1.07;
+	color: #212B36;
+}
+
+li {
+	padding-top: 3px;
+	padding-left: 30px;
+	min-height: 20px;
+	margin-bottom: 18px;
+}
+
+.ellipse li {
+	padding-top: 0px;
+	padding-left: 18px;
+	background: url("../img/icons/icons-1.svg") 0 3px / 8px no-repeat;
+	margin-right: 90px;
+} 
+
+.circle-blue li::before {
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/icons-2.svg") 0 0 no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-bottom: -5px;
+	margin-right: 10px;
+	transition: all 0.3s;
+}
+
+.circle-blue li:hover:before {
+	transform: scale(1.5);
+}
+
+.circle-green li {
+	background: url("../img/icons/icons-3.svg") 0 0 / 20px no-repeat;
+	margin-left: 91px;
+}
+
+.cross-circle li::before {
+	content: "";
+	display: inline-block;
+	background: url("../img/icons/icons-4.svg") 0 0 no-repeat;
+	width: 20px;
+	height: 20px;
+	margin-bottom: -5px;
+	margin-right: 10px;
+	transition: all 0.3s;
+	margin-left: -35px;
+}
+
+.cross-circle li:hover:before {
+	transform: rotate(-180deg);
+}
+
+
+.arrow-right li {
+	background: url("../img/icons/icons-5.svg") 0 0 / 20px no-repeat;
+	margin-right: 91px;
+	margin-left: 91px;
+}
+
+.star li {
+	background: url("../img/icons/icons-6.svg") 0 0 / 20px no-repeat;
+}
+
+.speakers {
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	color: #637381;
+	background: url("../img/speaker\ 1.png") 75% 50% no-repeat, linear-gradient(115deg, rgba(48,86,211,0) 64%, rgba(48,86,211,0.10) 64%, rgba(48,86,211,0.10) 67%, rgba(0,0,0,0) 67%, rgba(48,86,211,0.20) 67%, rgba(0,0,0,0) 90%) #F4F7FF;
+	padding: 145px 0;
+	margin-bottom: 50px;
+}
+
+.speakers__wrapper {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.speakers-block {
+	max-width: 570px;
+}
+
+.speakers-block__subtitle {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.33;
+	color: #3056D3;
+	margin-bottom: 13px;
+}
+
+.speakers-block__title {
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #212B36;
+	margin-bottom: 15px;
+}
+
+.speakers-block__text {
+	margin-bottom: 50px;
+}
+
+.speakers-block__button {
+	display: inline-block;
+	padding: 10px 30px;
+	color: #FFFFFF;
+	background: #3056D3;
+	border-radius: 30px;
+	font-weight: 600;
+}
+
+.speakers-block__button:hover {
+	display: inline-block;
+	padding: 10px 30px;
+	color: #FFFFFF;
+	background: #101e4b;
+	border-radius: 30px;
+	font-weight: 600;
+}
+
+.speakers-block__button:active {
+	display: inline-block;
+	padding: 15px 50px;
+	color: #FFFFFF;
+	background: #550e0e;
+	border-radius: 30px;
+	font-weight: 600;
+}
+
+.speakers *:last-child {
+	margin-bottom: 0;
+}
+
+
