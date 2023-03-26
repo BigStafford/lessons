@@ -1,0 +1,103 @@
+@import url("reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap');
+
+
+.icons__container {
+background-color: #777d8d;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 15px;
+}
+
+.icons__container-box {
+	max-width: 1200px; 
+	margin: 0 auto;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 1,31;
+}
+
+.icons__container-title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1,2;
+	margin-bottom: 18px;
+	color: #FFFFFF;
+}
+
+.icons__container-subtitle {
+	margin-bottom: 40px;
+	color: #FFFFFF;
+}
+
+.icons-img {
+	max-width: 630px; 
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.icons-img-1 {
+	max-width: 630px; 
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.icons-img-2 {
+	max-width: 630px; 
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+.desing {
+	background-color: #323641;
+	}
+
+.desing__container-box {
+		max-width: 1200px; 
+		margin: 0 auto;
+		font-family: "Inter", sans-serif;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 1,31;
+	}
+
+.desing__container-title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1,2;
+		margin-bottom: 18px;
+		color: #FFFFFF;
+		padding-top: 10px;
+	}
+
+.desing__container-subtitle {
+		margin-bottom: 40px;
+		color: #FFFFFF;
+	}
+
+.design__img-box img {
+	margin-left: 100px;
+	padding-bottom: 50px;
+}
+
+.content__container-box {
+		max-width: 1200px; 
+		margin: 0 auto;
+		font-family: "Inter", sans-serif;
+		font-weight: 600;
+		font-size: 19px;
+		line-height: 1,31;
+	}
+
+.content__container-title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1,2;
+		margin-bottom: 18px;
+		color: #212B36;
+	}
+
+.content__container-subtitle {
+		margin-bottom: 40px;
+	}
