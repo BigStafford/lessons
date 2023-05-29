@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+.header {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.header__container {
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.menu__item {
+	position: relative;
+	display: inline-block;
+}
+
+.menu__item:hover .sub-menu {
+	display: block;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 35px;
+}
+
+.menu__link {
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+}
+
+.menu__link--border {
+	padding: 9px 20.81px 9px 20.39px;
+	font-family: "Inter", sans-serif;
+font-weight: 600;
+}
+
+.menu__link--border:hover {
+	padding: 9px 20.81px 9px 20.39px;
+	font-family: "Inter", sans-serif;
+	font-weight: 600;
+	background-color: #F4F7FF;
+	border-radius: 5px;
+}
+
+.sub-menu {
+position: absolute;
+top: 100%;
+left: 0;
+min-width: 180px;
+display: none;
+}
+
+.sub-menu__item {
+	position: relative;
+}
+
+.sub-menu__item:not(:last-child) {
+	margin-bottom: 13px;
+}
+
+.sub-menu__link {
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	color: #637381;
+}
+
+.sub-menu__link:hover {
+	font-family: "Inter", sans-serif;
+	font-weight: 500;
+	color: #3056D3
+}
+
+.drop-menu {
+	position: absolute;
+top: 0;
+left: 100%;
+min-width: 180px;
+display: none;
+}
+
+.sub-menu__item:hover .drop-menu {
+	display: block;
+}
