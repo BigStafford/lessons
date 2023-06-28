@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<title>Lessons 12</title>
+</head>
+
+<body>
+	<div class="wrraper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__title">
+					<h1>CSS transform</h1>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<section class="page-transform transform">
+					<div class="transform__title">
+						<h2>Transform</h2>
+					</div>
+					<div class="transform__text">
+						<p>За допомогою 2D та 3D трансформації
+							ми зможемо зрушувати, повертати, масштабувати
+							елементи та робити багато іншого!
+							Задається трансформація властивістю
+							transform та її значеннями.</p>
+						<p class="transform__item transform__item--blue">transform: функція(ї)-значення властивості;</p>
+						<p>При вказанні відсоткових значень,
+							відсоток вираховується від розмірів самого об'єкту
+							x - від ширини, y - від висоти.</p>
+						<p>При використанні transform, об'єкт стає ближче (вище)
+							по осі z. Тобто накриє собою інші об'єкти без влатстивості
+							transform та position. Стає на передній план.</p>
+						<p class="transform__item transform__item--red">Попередження: !!!!! НЕ ПРАЦЮЄ з рядковими об'єктами
+							!!!!!!!!</p>
+					</div>
+				</section>
+				<section class="page-translate translate">
+					<div class="translate__title">
+						<h2>Translate</h2>
+					</div>
+					<div class="translate__text">
+						<p class="translate__item translate__item--blue">translate (x, y)</p>
+						<p>Зміщує елемент на нове місце,</p>
+						<p>переміщаючи відносно початкового</p>
+						<p>положення об'єкта вправо та вниз,</p>
+						<p>використовуючи координати X та Y.</p>
+						<p>Записується так translate (x,y).</p>
+					</div>
+					<div class="translate__content"></div>
+				</section>
+				<section class="page-scale scale">
+					<div class="scale__title">
+						<h2>Scale</h2>
+					</div>
+					<div class="scale__text">
+						<p>Масштабує елементи,</p>
+						<p>роблячи їх більшими або меншими.</p>
+						<p>1 - це початковий розмір об'єкту.</p>
+					</div>
+					<div class="scale__content"></div>
+					<div class="scale__content-mirrow">Дзеркало</div>
+				</section>
+				<section class="page-rotate rotate">
+					<div class="rotate__title">
+						<h2>Rotate</h2>
+					</div>
+					<div class="rotate__text">
+						<p>Повертає елементи.</p>
+					</div>
+					<div class="rotate__content">Rotate</div>
+				</section>
+				<section class="page-skew skew">
+					<div class="skew__title">
+						<h2>Skew</h2>
+					</div>
+					<div class="skew__text">
+						<p>Деформує (нахиляє) елементи.</p>
+					</div>
+					<div class="skew__content"></div>
+				</section>
+				<section class="page-plural plural">
+					<div class="plural__title">
+						<h2>Множинні 2D трансформації</h2>
+					</div>
+					<div class="plural__text">
+						<p>Множинні 2D трансформації значення <br> розділяються пробілом.</p>
+					</div>
+					<div class="plural__content"></div>
+				</section>
+				<section class="page-transform-origin transform-origin">
+					<div class="transform-origin__title">
+						<h2>Transform-origin</h2>
+					</div>
+					<div class="transform-origin__text">
+						<p>Дозволяє змістити центр трансформації,</p>
+						<p>щодо якого відбувається зміна
+							положення/розміру/форми елемента.</p>
+					</div>
+					<div class="transform-origin__content"></div>
+				</section>
+				<section class="page-perspective perspective">
+					<div class="perspective__title">
+						<h2>Perspective</h2>
+					</div>
+					<div class="perspective__text">
+						<p>Perspective,</p>
+						<p class="perspective__item perspective__item--blue">perspective-origin</p>
+						<p>Встановлення глибини та зміна точки початку координат.</p>
+						<p class="perspective__item perspective__item--red">!! Задаються батьківському елементу!!</p>
+						<p>perspective-origin: center (за замовченням).</p>
+						<p>perspective - не можна вказати у відсотках.</p>
+					</div>
+					<div class="perspective__content">
+						<div class="perspective__item"></div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
