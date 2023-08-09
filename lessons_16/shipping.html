@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/shipping.css">
+	<link rel="stylesheet" href="css/common.css">
+	<title>HTML форми. Частина друга</title>
+</head>
+
+<body>
+	<div class="wrraper">
+		<main class="page">
+			<div class="page__container">
+				<h2 class="page__title page__title--margin">Shipping Address</h2>
+				<form action="#" method="post" class="page__form form">
+					<div class="form__line">
+						<label class="form__label form__label--star" for="mail-01">Email Address</label>
+						<input type="email" id="mail-01" name="mail" required tabindex="6" class="form__input">
+					</div>
+					<div class="form__line">
+						<label class="form__label" for="pass-01">Password</label>
+						<input type="password" id="pass-01" name="pass" required tabindex="7" class="form__input">
+					</div>
+					<div class="form__line">
+						<label class="form__label" for="postal-01">Zip/Postal Code</label>
+						<input type="text" id="postal-01" name="postal" required tabindex="8" class="form__input">
+					</div>
+					<div class="form__text">
+						<p>You already have an account with us. Sign in or continue as guest.</p>
+					</div>
+					<div class="form__btn">
+						<input type="submit" value="Login" id="login-01" name="login" tabindex="9"
+							class="form__input form__input--border">
+						<a class="form__link" href="#" tabindex="10">Forgot Your Password?</a>
+					</div>
+				</form>
+				<form action="#" method="get" class="page__form form">
+					<div class="form__line">
+						<label class="form__label form__label--star" for="name-01">First Name</label>
+						<input type="text" id="name-01" name="name" required tabindex="11" class="form__input">
+					</div>
+					<div class="form__line">
+						<label class="form__label form__label--star" for="sur-name-01">Last Name</label>
+						<input type="text" id="sur-name-01" name="sur-name" required tabindex="12" class="form__input">
+					</div>
+					<div class="form__line">
+						<label class="form__label" for="company-01">Company</label>
+						<input type="text" id="company-01" name="company" tabindex="13" class="form__input">
+					</div>
+					<div class="form__line form__line--column">
+						<label class="form__label form__label--star" for="address-01">Street Address</label>
+						<input type="text" id="address-01" name="address" required tabindex="14"
+							class="form__input form__input--column">
+						<input type="text" id="address-02" name="address" tabindex="15"
+							class="form__input form__input--column">
+						<input type="text" id="address-03" name="address" tabindex="16"
+							class="form__input form__input--column">
+					</div>
+					<div class="form__line">
+						<label class="form__label form__label--star-margin8" for="country-01">Country</label>
+						<input type="text" id="country-01" name="country" required tabindex="17" class="form__input">
+					</div>
+					<div class="form__line">
+						<label class="form__label form__label--star-margin11" for="country-01">State/Province</label>
+						<select name="form__list">
+							<option value="1">Please select a region, state or province</option>
+							<option value="2">Please select a region, state or province</option>
+							<option value="3">Please select a region, state or province</option>
+							<option value="4">Please select a region, state or province</option>
+							<option value="5">Please select a region, state or province</option>
+						</select>
+					</div>
+				</form>
+				<h2 class="page__title page__title--line">Shipping Methods</h2>
+				<form action="#" method="get" class="page__form form">
+					<div class="form__radio radio">
+						<div class="radio__items">
+							<input checked class="radio__input" id="price-01" value="$5.00" name="price" type="radio">
+							<label class="radio__label" for="price-01">$5.00</label>
+							<div class="radio__text">
+								<p class="radio__item">Fixed</p>
+								<p class="radio__item">Flat Rate</p>
+							</div>
+						</div>
+						<div class="radio__items radio__items--width">
+							<input class="radio__input radio__input" id="price-02" name="price" value="$10.00" type="radio">
+							<label class="radio__label" for="price-02">$10.00</label>
+							<div class="radio__text">
+								<p class="radio__item">Table Rate</p>
+								<p class="radio__item">Best Way</p>
+							</div>
+						</div>
+					</div>
+					<div class="form__button">
+						<input type="submit" value="next" id="next-01" name="login" tabindex="18"
+							class="form__input form__input--border">
+						<a class="form__ref" href="#" tabindex="19">back</a>
+					</div>
+				</form>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

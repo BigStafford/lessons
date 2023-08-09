@@ -22,37 +22,37 @@ margin: 0 auto;
 padding-left: 15px;
 padding-right: 15px;
 }
-.header__title{
+.header__title {
 	color: #212B36;
 	font-size: 44px;
 	font-weight: 700;
 	line-height: 1.25;
 }
-.header{
+.header {
 	padding-top: 120px;
 	margin-bottom: 50px;
 }
-.page__title{
+.page__title {
 	color: #212B36;
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 1.25;
 	margin-bottom: 45px;
 }
-.form{
+.form {
 	display: flex;
-	justify-content: space-between;
-	gap: 15px;
-	padding-bottom: 30px;
+	gap: 28px;
+	margin-bottom: 30px;
 }
 .form__input {
-	flex: 0 1 336px;
+	flex: 0 1 50%;
 	height: 54px;
 	border-radius: 7px;
 	border: 1px solid #E7E7E7;
 	padding-left: 25px;
+	padding-right: 25px;
 }
-.form__input:hover{
+.form__input:hover {
 	border: 1px solid var(--tail-grids-color, #3056D3);
 }
 .area__enter-text {
@@ -61,10 +61,11 @@ padding-right: 15px;
 	resize: vertical;
 	padding-top: 25px;
 	padding-left: 25px;
+	padding-right: 25px;
 	border-radius: 7px;
 	border: 1px solid var(--stroke, #E7E7E7);
 }
-.area__enter-text	:hover{
+.area__enter-text	:hover {
 	border: 1px solid var(--tail-grids-color, #3056D3);
 }
 .area {
@@ -103,7 +104,7 @@ padding-right: 15px;
 	content: "";
 	background-image: url('../img/icons/check-mark.svg');
 }
-.page-coupon__title {
+.page__coupon {
 	color: #212B36;
 	font-size: 24px;
 	font-weight: 700;
@@ -115,11 +116,12 @@ padding-right: 15px;
 	gap: 20px;
 }
 .coupon__input {
-	flex: 0 0 325px;
+	flex: 0 0 50%;
 	height: 48px;
 	border-radius: 7px;
 	border: 1px solid #E7E7E7;
 	padding-left: 22px;
+	padding-right: 22px;
 }
 .coupon__button {
 	color: #FFF;

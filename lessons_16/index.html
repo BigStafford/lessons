@@ -17,23 +17,23 @@
 				<div class="page__header header">
 					<h2 class="header__title">Checkout</h2>
 					<div class="header__text">
-						<p>There are 3 products in your cart</p>
+						There are 3 products in your cart
 					</div>
 				</div>
 				<h3 class="page__title">Billing Details</h3>
-				<form class="page__form form" action="#" method="GET">
-					<input class="form__input" type="text" id="username" name="username" placeholder="First name*" required
-						tabindex="username-1">
-					<input class="form__input" type="text" id="username-02" name="username-02" placeholder="Last name*"
-						required tabindex="username-03">
+				<form class="page__form form" action="#" method="get">
+					<input class="form__input" type="text" id="username-01" name="username" placeholder="First name*"
+						required tabindex="0">
+					<input class="form__input" type="text" id="username-03" name="username" placeholder="Last name*" required
+						tabindex="1">
 				</form>
-				<form class="page__form form" action="#" method="GET">
+				<form class="page__form form" action="#" method="get">
 					<input class="form__input" type="text" id="address" name="address-01" placeholder="Address*" required
-						tabindex="address-2">
+						tabindex="2">
 					<input class="form__input" type="text" id="address-03" name="address-04" placeholder="Address line 2"
-						tabindex="address-05">
+						tabindex="3">
 				</form>
-				<form class="page__form form" action="#" method="GET">
+				<form class="page__form form" action="#" method="get">
 					<select class="form__list" id="country">
 						<option value="1">Country*</option>
 						<option value="2">Country*</option>
@@ -42,34 +42,32 @@
 						<option value="5">Country*</option>
 					</select>
 					<input class="form__input" type="text" id="city-01" name="city" placeholder="City/Town*" required
-						tabindex="city-03">
+						tabindex="4">
 				</form>
-				<form class="page__form form" action="#" method="GET">
-					<input class="form__input" type="tel" id="postcode" name="postcode-02" placeholder="Postcode / ZIP*"
-						required tabindex="postcode-03">
+				<form class="page__form form" action="#" method="get">
+					<input class="form__input" type="text" id="postcode" name="postcode-02" placeholder="Postcode / ZIP*"
+						required tabindex="5">
 					<input class="form__input" type="tel" id="phone" name="phone-01" placeholder="Phone*" required
-						tabindex="phone-02">
+						tabindex="6">
 				</form>
-				<form class="page__form-area area" action="#" method="GET">
+				<form class="page__form-area area" action="#" method="get">
 					<textarea class="area__enter-text" autocomplete="off" name="message"
 						placeholder="Additional information"></textarea>
 				</form>
-				<form class="page__form-chk chk" action="#" method="GET">
+				<form class="page__form-chk chk" action="#" method="get">
 					<div class="chk-line">
-						<input class="chk-line__input" checked id="create-01" required autocomplete="off" name="create"
-							type="checkbox">
+						<input class="chk-line__input" checked id="create-01" required name="create" type="checkbox">
 						<label class="chk-line__label" for="create-01">Create Account</label>
 					</div>
 					<div class="chk-line">
-						<input class="chk-line__input" id="different-01" required autocomplete="off" name="different"
-							type="checkbox">
+						<input class="chk-line__input" id="different-01" required name="different" type="checkbox">
 						<label class="chk-line__label" for="different-01">Ship to a different address?</label>
 					</div>
 				</form>
-				<h3 class="page-coupon__title">Apply Coupon to get discount!</h3>
-				<form class="page__coupon coupon" action="#" method="GET">
+				<h3 class="page__coupon">Apply Coupon to get discount!</h3>
+				<form class="page__form-coupon coupon" action="#" method="get">
 					<input class="coupon__input" type="text" id="code-01" autocomplete="off" name="code"
-						placeholder="Coupon code" tabindex="code-02">
+						placeholder="Coupon code" tabindex="7">
 					<button class="coupon__button" type="submit">Apply Code</button>
 				</form>
 			</div>
