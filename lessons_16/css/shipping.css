@@ -64,10 +64,12 @@ body {
 }
 .form__btn {
 	display: flex;
-	margin-top: 25px;
 	padding-bottom: 36px;
 	gap: 25px;
 	border-bottom: 0.1rem solid #C4C4C4;
+}
+.form__text {
+	margin-bottom: 25px;
 }
 .form__input--border {
 	flex: 0 0 120px;
@@ -87,7 +89,6 @@ body {
 	font-size: 18px;
 }
 .form__link {
-	flex: 1 0 149px;
 	align-self: center;
 	color: #0F6DB1;
 	font-family: "Roboto", sans-serif;
@@ -189,3 +190,6 @@ body {
 	text-transform: uppercase;
 	align-self: center;
 }
+.radio__input:checked + .radio__label {
+	color: #000;
+	}
