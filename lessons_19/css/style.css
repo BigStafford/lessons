@@ -1,0 +1,104 @@
+@import url("reset.css");
+@import url("common.css");
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+/*----------------------------------------------------------*/
+body {
+	font-family: "Inter", sans-serif;
+	color: #637381;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper>main {
+	flex-grow: 1;
+}
+/*----------------------------------------------------------*/
+[class*="__container"] {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.page__container {
+	padding: 91px 0;
+}
+
+.cards {
+	position: relative;
+}
+
+.cards__body {
+	position: relative;
+	padding-bottom: 40.350877%; /* 230/570 */
+}
+
+.cards__body img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.cards__body--big {
+	position: relative;
+	padding-bottom: 85.964912%; /* 490/570 */
+}
+
+.cards__body--big img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.cards__title {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+	line-height: 1.5;
+}
+
+.cards__subtitle {
+	position: absolute;
+	top: 76px;
+	left: 40px;
+	line-height: 1.5;
+	font-size: 28px;
+	line-height: 1.25;
+	color: #212B36;
+	max-width: 362px;
+}
+
+.page__body {
+	display: grid;
+	grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+	grid-gap: 30px;
+}
+
+.cards--big {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column-start: auto;
+	grid-column-end: auto;
+}
+
+.cards--background {
+	background: url("../img/watch.png") 84.28% 50% no-repeat, #D9EBFB;
+
+}
+/*----------------------------------------------------------*/
+@media (max-width: 1097px) {
+	.cards__body--big {
+
+	}
+}
