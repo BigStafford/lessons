@@ -31,13 +31,9 @@ body {
 	padding: 91px 0;
 }
 
-.cards {
-	position: relative;
-}
-
 .cards__body {
 	position: relative;
-	padding-bottom: 40.350877%; /* 230/570 */
+	padding-bottom: 40.350877%;
 }
 
 .cards__body img {
@@ -46,11 +42,13 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 }
 
 .cards__body--big {
 	position: relative;
-	padding-bottom: 85.964912%; /* 490/570 */
+	padding-bottom: 85.964912%;
 }
 
 .cards__body--big img {
@@ -59,24 +57,24 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 }
 
 .cards__title {
-	position: absolute;
-	top: 40px;
-	left: 40px;
 	line-height: 1.5;
+	padding-left: 40px;
+	padding-top: 40px;
 }
 
 .cards__subtitle {
-	position: absolute;
-	top: 76px;
-	left: 40px;
 	line-height: 1.5;
 	font-size: 28px;
 	line-height: 1.25;
 	color: #212B36;
 	max-width: 362px;
+	padding-left: 40px;
+	padding-top: 12px;
 }
 
 .page__body {
@@ -94,11 +92,7 @@ body {
 
 .cards--background {
 	background: url("../img/watch.png") 84.28% 50% no-repeat, #D9EBFB;
-
+	max-width: 570px;
+	max-height: 230px;
 }
 /*----------------------------------------------------------*/
-@media (max-width: 1097px) {
-	.cards__body--big {
-
-	}
-}
