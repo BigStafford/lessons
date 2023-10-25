@@ -28,49 +28,16 @@ body {
 	padding-right: 15px;
 	margin: 0 auto;
 }
-.body-card--big {
-	background: url("../img/1.jpg")0 0/100% auto no-repeat;
-	max-width: 570px;
-	min-height: 490px;
+
+.body-card {
+	position: relative;
 }
 
-.body-card--background {
-	background: url("../img/watch.png") 84.28% 50% no-repeat, #D9EBFB ;
-	max-width: 570px;
-	min-height: 230px;
-}
-
-.body-card__title {
-	line-height: 1.25;
-	padding-left: 40px;
-	padding-top: 40px;
-	margin-bottom: 12px;
-}
-
-.body-card__subtitle {
-	color: #212B36;
-	font-size: 28px;
-	line-height: 1.25;
-	max-width: 362px;
-	padding-left: 40px;
-}
-
-.body-card--img {
-	background: url("../img/2.jpg")0 0/100% auto no-repeat;
-	max-width: 570px;
-	min-height: 230px;
-}
-
-.cards-grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
-	gap: 30px;
-}
-
-.body-card--big {
-	grid-row-start: 1;
-	grid-row-end: 3;
-	grid-column-start: auto;
-	grid-column-end: auto;
+.body-card__img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
 }
 /*----------------------------------------------------------*/
