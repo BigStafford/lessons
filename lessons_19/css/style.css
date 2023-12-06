@@ -207,16 +207,6 @@ body {
 	margin-bottom: 30px;
 }
 
-.grid-trending__img--gradient::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: linear-gradient(180deg, rgba(33, 43, 54, 0.00) 0%, rgba(33, 44, 54, 0.70) 100%), url("..//img/busket.svg") 10% 90%/18px 18px no-repeat, url("..//img/chosen.svg") 20% 90%/18px 18px no-repeat, url("..//img/like.svg") 30% 90%/18px 18px no-repeat;
-}
-
 .grid-trending__img--big {
 	padding-bottom: 54%;
 	overflow: hidden;
@@ -234,6 +224,16 @@ body {
 	border-radius: 5px;
 	}
 
+.grid-trending__img--gradient::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(180deg, rgba(33, 43, 54, 0.00) 0%, rgba(33, 44, 54, 0.70) 100%);
+}
+
 .grid-trending__img--big img {
 	width: 100%;
 	height: 100%;
@@ -242,6 +242,22 @@ body {
 	top: 0;
 	left: 0;
 	border-radius: 5px;
+}
+
+.img__list {
+	display: ;
+}
+
+.img__list img {
+	width: 16.2px;
+	height: 16.2px;
+	border-radius: 4px;
+	background: #FFF;
+	box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.14);
+}
+
+.img__link {
+
 }
 
 .grid-trending__description {
