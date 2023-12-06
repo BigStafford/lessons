@@ -30,15 +30,11 @@ body {
 	line-height: 1.5;
 }
 
-
 [class*="__container"] {
 	max-width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
-}
-
-.page {
 }
 
 .page__container {
@@ -47,8 +43,6 @@ body {
 
 .page__recent {
 	margin-bottom: 120px;
-}
-.recent {
 }
 
 .recent__lettering {
@@ -115,9 +109,6 @@ body {
 	grid-template-columns: 1fr auto;
 	grid-column-gap: 30px;
 	grid-row-gap: 4px;
-}
-
-.grid-trending__description {
 }
 
 .grid-recent__title {
@@ -200,6 +191,9 @@ body {
 
 .grid-trending__body {
 	grid-column: span 5;
+	background: #fff;
+	border-radius: 8px;
+	border: 1px solid #E7E7E7;
 }
 
 .grid-trending__body--big {
@@ -207,10 +201,20 @@ body {
 }
 
 .grid-trending__img {
-	padding-bottom: 77.8493993554%;
+	padding-bottom: 77.07%;
 	overflow: hidden;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+.grid-trending__img--gradient::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(180deg, rgba(33, 43, 54, 0.00) 0%, rgba(33, 44, 54, 0.70) 100%), url("..//img/busket.svg") 10% 90%/18px 18px no-repeat, url("..//img/chosen.svg") 20% 90%/18px 18px no-repeat, url("..//img/like.svg") 30% 90%/18px 18px no-repeat;
 }
 
 .grid-trending__img--big {
@@ -241,13 +245,26 @@ body {
 }
 
 .grid-trending__description {
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+
+.grid-trending__category {
+	font-weight: 600;
+	margin-bottom: 10px;
 }
 
 .grid-trending__title {
+	color: #212B36;
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.25;
+	margin-bottom: 10px;
 }
 
 .grid-trending__price {
-}
-
-.grid-trending__link {
+	color: #212B36;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.33;
 }
