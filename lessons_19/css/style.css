@@ -566,7 +566,7 @@ body {
 }
 
 .picture__img--big {
-	padding-bottom: 40.3vw;
+	padding-bottom: 87.6%;
 	overflow: hidden;
 	position: relative;
 }
@@ -581,7 +581,7 @@ body {
 }
 
 .picture__img--small {
-	padding-bottom: 18.9vw;
+	padding-bottom: 41.1%;
 	overflow: hidden;
 	position: relative;
 }
