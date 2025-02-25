@@ -1,0 +1,456 @@
+@use "sass:math";
+
+@import "_mixins.scss";
+@import "_reset.scss";
+@import "_common.scss";
+@import "_variables.scss";
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,500&display=swap");
+
+body {
+	font-family: "Manrope", sans-serif;
+	font-weight: 400;
+	color: #808080;
+	background-color: #1E1E1E;
+	font-size: rem(18);
+}
+
+
+[class*="__container"] {
+	max-width: rem(1626);
+	padding: 0 rem(15);
+	margin: 0 auto;
+
+	@include bp($laptop,$tablet) {
+		padding-inline: rem(80);
+	}
+}
+
+.header {
+	position: fixed;
+	top: 22px;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+
+	&__logo {
+		position: relative;
+		flex: 0 0 rem(200);
+		aspect-ratio: 200/60;
+
+		@include bp($laptop) {
+			 flex: 0 0 rem(167);
+		}
+
+		@include bp($mobile) {
+			flex: 0 0 rem(116);
+		}
+
+		img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				
+			}
+	}
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(15);
+	}
+}
+
+// ДОЛЖНО ЛИ МЕНЮ СЛЕДОВАТЬ ЗА СКРОЛОМ ПО САЙТУ?
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: rem(29);
+	padding: rem(10) rem(40) rem(10) rem(10);
+	background-color: #0F0F0F;
+	border: rem(4) solid #1F1F1F;
+	border-radius: rem(12);
+	
+	@include bp($laptop,$tablet) {
+		border: rem(3) solid #1A1A1A;
+		border-radius: rem(10);
+		padding: rem(8) rem(30) rem(8) rem(8);
+		gap: rem(16);
+	}
+
+	@include bp($tablet) {
+		 flex-direction: column;
+		 row-gap: 20px;
+	}
+
+	&__link {
+		display: block;
+		color: #BFBFBF;
+		transition: color 0.3s ease, transform 0.3s ease;
+
+		@include bp($laptop) {
+	 font-size: rem(14);
+}
+
+@include bp($tablet) {
+	font-size: rem(24);
+}
+
+		&--active {
+			color: #FFFFFF;
+			border: rem(1) solid #1A1A1A;
+			border-radius: rem(8);
+			padding: rem(14) rem(24);
+			background-color: #1A1A1A;
+
+			@include bp($laptop,$tablet) {
+				padding: rem(12) rem(20);
+			}
+
+			@include bp($tablet) {
+				padding: rem(10) rem(20);
+			}
+		}
+	}
+}
+
+	@media (any-hover: hover) {
+		.menu__item:hover .menu__link {
+			color: #FFFFFF;
+		}
+
+		.buttons__btn:hover {
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+	}
+
+.buttons {
+	display: flex;
+	justify-content: end;
+	gap: rem(30);
+	min-width: rem(199);
+
+	@include bp($laptop) {
+		 gap: rem(14);
+		 min-width: rem(162);
+
+		 img {
+			max-width: rem(62);
+			height: rem(24);
+			object-fit: contain;
+			
+		}
+	}
+
+	@include bp($tablet){
+		gap: rem(1);
+		min-width: rem(1);
+	}
+
+	&__btn {
+		transition: color 0.3s ease, transform 0.3s ease;
+		will-change: transform;
+	}
+
+	@include bp($tablet){
+		display: none;
+	}
+}
+
+.menu-icon {
+	display: none;
+
+	@include bp($tablet) {
+		 display: block;
+		 flex: 0 0 30px;
+		 height: 18px;
+		 position: relative;
+		 border: 10px solid #1A1A1A;
+		 border-radius: 6px;
+		 padding: 10px;
+		 background: #1A1A1A;
+
+		 &::before,
+		 &::after,
+		 span {
+
+			content: "";
+			position: absolute;
+			right: 0;
+			height: 2px;
+			width: 100%;
+			background-color: #FFFFFF;
+			transition: all 0.3s ease;
+		 }
+
+		 &::before {
+			top: 0;
+		 }
+
+		 &::after {
+			bottom: 0;
+			width: 30%;
+		 }
+
+		 span {
+			top: 50%;
+			margin-top: -0.6px;
+		 }
+
+		 &:hover::after {
+			width: 100%;
+		}
+	}
+}
+
+.header__body {
+
+	@include bp($tablet) {
+		 position: fixed;
+		 width: 100%;
+		 height: 100%;
+		 top: 0;
+		 left: -100%;
+		 background-color: #0F0F0F;
+		 padding: 70px 15px 20px 15px;
+	}
+}
+
+.hero {
+	margin-bottom: 208px;
+}
+
+// СДЕЛАТЬ С УЧИТЕЛЕМ
+
+// .hero {
+// 	height: 100vh;
+
+// 	&__container {
+// 		max-width: rem(1950);
+// 		padding: 0 rem(15);
+// 		margin: 0 auto;
+// 	}
+
+// 	&__content {
+
+// 	}
+
+// 	&__bg {
+// 		display: flex;
+// 		img {
+// 			width: 100%;
+// 		}
+// 		@include bp($tablet) {
+// 			overflow: hidden;
+// 			align-items: center;
+// 			justify-content: center;
+
+// 			img {
+// 				width: unset;
+				
+// 			}
+// 	  }
+// 	}
+
+// 	&__title {
+// 	}
+
+// 	&__text {
+// 	}
+
+// 	&__btn {
+// 	}
+// }
+
+.card {
+	margin-bottom: rem(150);
+	
+	&__container {
+	}
+
+	&__content {
+		display: flex;
+		margin-bottom: 80px;
+	}
+
+	&__text {
+		flex-grow: 1;
+		line-height: 1.5;
+		color: #999999;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: rem(38);
+		line-height: 1.5;
+		color: #FFFFFF;
+		margin-bottom: rem(14);
+	}
+}
+
+// КАК ПЕРЕСТАВИТЬ СЛАЙДЕР В АДАПТИВЕ ПО МАКЕТУ?
+.slider-navigation {
+	display: flex;
+	flex-shrink: 0;
+	gap: rem(16);
+	border: 1px solid #1F1F1F;
+	border-radius: rem(12);
+	padding: rem(16);
+	min-width: rem(257);
+	height: rem(88);
+	background: #0F0F0F;
+
+	&__btn {
+		border: 1px solid #1F1F1F;
+		border-radius: rem(8);
+		padding: rem(14);
+		width: rem(56);
+		height: rem(56);
+		background: #1A1A1A;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			background: #E50000;
+		}
+	}
+
+	&__pagination {
+		display: flex;
+		align-items: center;
+		gap: rem(3);
+
+		span {
+			&:first-child {
+				width: 23px;
+				background-color: #E50000;
+			}
+
+			border-radius: rem(100);
+			width: rem(16);
+			height: rem(4);
+			background: #333333;
+		}
+	}
+}
+
+
+.body-card {
+	display: grid;
+	grid-template: 1fr / 1fr 1fr 1fr 1fr 1fr;
+	gap: rem(30);
+	&__item {
+		border: 1px solid #262626;
+		border-radius: 12px;
+		padding: 30px;
+		width: 295px;
+		height: 342px;
+		background: #1A1A1A;
+	}
+
+	&__img {
+		position: relative;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, #1a1a1a 100%);
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		font-weight: 600;
+		line-height: 1.5;
+		color: #FFFFFF;
+	}
+
+	&__btn {
+		transition: transform 0.3s ease-in-out;
+		&:hover {
+			transform: scale(1.1);
+	}
+	}
+}
+
+.services {
+
+	&__content {
+		padding: 0px 300px 0px 0px;
+		max-width: rem(1597);
+		margin-bottom: rem(80);
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: rem(38);
+		line-height: 1.5;
+		color: #FFFFFF;
+		margin-bottom: rem(14);
+	}
+
+	&__text {
+	line-height: 1.5;
+	color: #999999;
+	}
+}
+
+.body-services {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: rem(30);
+
+	&__item {
+	border: 1px solid #0F0F0F;
+	border-radius: 12px;
+	padding: 50px;
+	width: 512px;
+	height: 283px;
+	// Как вы это сделали?
+	background: linear-gradient(222deg, rgba(229, 0, 0, 0.50) -208.03%, rgba(229, 0, 0, 0.00) 41.32%), #0F0F0F;
+	}
+
+	&__flex {
+		display: flex;
+		align-items: center;
+		gap: rem(16);
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+		border: 1px solid #1f1f1f;
+		border-radius: 12px;
+		padding: 16px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: rem(24);
+		line-height: 1.5;
+		color: #fff;
+	}
+
+	&__text {
+		line-height: 1.5;
+		color: #999;
+	}
+}
